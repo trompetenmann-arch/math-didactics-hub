@@ -39,7 +39,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed text-balance">
-            Postdoc am Institut für Didaktik der Mathematik (IDM) der{" "}
+            Ich bin Postdoc am Institut für Didaktik der Mathematik (IDM) der{" "}
             <em className="text-foreground not-italic font-medium">Universität Bielefeld</em>{" "}
             und Lehrer an der Rudolf-Steiner Schule. Ich forsche zu Grundvorstellungen
             mathematischer Begriffe und zum Einsatz von Künstlicher Intelligenz im Mathematikunterricht.
