@@ -33,7 +33,7 @@ const pubs = [
     year: "2025",
     type: "Tagungsband",
     co: "Katter, V.; Barton, D.",
-    title: "\"Wo liegt mein Fehler?\" — Einsatz von generativer KI zur Fehlerreflexion. Erste Zwischenergebnisse des Projekts KIBEBA",
+    title: "„Wo liegt mein Fehler?“ — Einsatz von generativer KI zur Fehlerreflexion. Erste Zwischenergebnisse des Projekts KIBEBA",
     venue: "Beiträge zum Mathematikunterricht 2025",
   },
   {

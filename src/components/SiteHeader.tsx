@@ -25,23 +25,24 @@ export const SiteHeader = () => {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-card/92 backdrop-blur-md shadow-soft"
-          : "bg-card/80 backdrop-blur-sm"
+          ? "bg-background/85 backdrop-blur-md border-b border-border/60"
+          : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-center h-16 relative">
-        <a href="#top" className="absolute left-4 md:left-6 text-base font-bold tracking-tight text-foreground">
-          V<span className="text-primary">·</span>Katter
+      <div className="container flex items-center justify-between h-16">
+        <a href="#top" className="font-serif text-lg font-semibold tracking-tight">
+          V<span className="text-accent">·</span>Katter
         </a>
 
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-semibold text-foreground/80 hover:text-primary transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               {l.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -49,7 +50,7 @@ export const SiteHeader = () => {
         <button
           aria-label="Menü"
           onClick={() => setOpen((s) => !s)}
-          className="lg:hidden absolute right-4 flex flex-col gap-1.5 p-2"
+          className="lg:hidden flex flex-col gap-1.5 p-2"
         >
           <span className={`block h-px w-5 bg-foreground transition-all ${open ? "translate-y-[7px] rotate-45" : ""}`} />
           <span className={`block h-px w-5 bg-foreground transition-all ${open ? "opacity-0" : ""}`} />
