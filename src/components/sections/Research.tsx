@@ -33,7 +33,7 @@ export const Research = () => (
       <SectionHeading
         eyebrow="Forschung"
         title={<>Forschungs­schwerpunkte</>}
-        intro="Zwei zentrale Themenbereiche: Einsatz von KI beim Mathematiklernen und stoffdidaktische Forschung — getragen von der Frage, wie sich mathematische Begriffe im Kopf der Lernenden bilden."
+        intro="Zwei zentrale Themenbereiche: Einsatz von KI beim Mathematiklernen und stoffdidaktische Forschung"
       />
 
       <div className="grid md:grid-cols-2 gap-6">
