@@ -17,25 +17,25 @@ const news = [
     date: "2025",
     tag: "Publikation",
     title: "JMD-Artikel zur Sinusfunktion erschienen",
-    body: "„Didaktisch orientierte Sachanalysen zur Ausdifferenzierung funktionaler Grundvorstellungen“ im Journal für Mathematik-Didaktik.",
+    body: "\"Didaktisch orientierte Sachanalysen zur Ausdifferenzierung funktionaler Grundvorstellungen\" im Journal für Mathematik-Didaktik.",
   },
   {
     date: "2025",
     tag: "Vortrag",
     title: "Netzwerktagung Mathematik (NLQ)",
-    body: "Vortrag „KI aus Schülerperspektive“ beim Niedersächsischen Landesinstitut für schulische Qualitätsentwicklung.",
+    body: "Vortrag \"KI aus Schülerperspektive\" beim Niedersächsischen Landesinstitut für schulische Qualitätsentwicklung.",
   },
   {
     date: "2024",
     tag: "International",
     title: "INEM-Lehrerfortbildung in Chile",
-    body: "Workshops zu „Grundvorstellungen de las funciones trigonométricas & exponentiales“ an der Universidad Católica del Norte, Antofagasta.",
+    body: "Workshops zu \"Grundvorstellungen de las funciones trigonométricas & exponentiales\" an der Universidad Católica del Norte, Antofagasta.",
   },
   {
     date: "2024",
     tag: "Praxis",
     title: "Federpendel-Beitrag in mathematik lehren",
-    body: "„Das digitale Federpendel — virtuell-enaktiv zu periodischen Prozessen“ (mit Bulthaup & Jetses).",
+    body: "\"Das digitale Federpendel — virtuell-enaktiv zu periodischen Prozessen\" (mit Bulthaup & Jetses).",
   },
 ];
 
