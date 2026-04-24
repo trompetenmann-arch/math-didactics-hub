@@ -27,25 +27,7 @@ export const Hero = () => {
       </svg>
 
       <div className="container relative grid lg:grid-cols-12 gap-12 items-center">
-        {/* Bild - jetzt zuerst (links auf Desktop, oben auf Mobile) */}
-        <div className="lg:col-span-5 animate-fade-up order-1 lg:order-1">
-          <div className="relative max-w-sm mx-auto">
-            <div className="absolute -inset-4 bg-accent-gradient opacity-20 blur-2xl rounded-full" />
-            <div className="relative aspect-[4/5] rounded-md overflow-hidden shadow-warm border border-border/60 bg-card">
-              <img
-                src={portrait}
-                alt="Porträt von Dr. Valentin Katter, Mathematikdidaktiker"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-md px-4 py-3 shadow-soft">
-              <p className="text-xs text-muted-foreground">Universität Bielefeld · IDM</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Text - jetzt danach (rechts auf Desktop, unten auf Mobile) */}
-        <div className="lg:col-span-7 animate-fade-up order-2 lg:order-2" style={{ animationDelay: "0.2s" }}>
+        <div className="lg:col-span-7 animate-fade-up">
           <div className="inline-flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <span className="h-px w-8 bg-accent" />
             Mathematikdidaktik · Forschung & Lehre
@@ -105,6 +87,22 @@ export const Hero = () => {
             >
               eKVV Bielefeld
             </a>
+          </div>
+        </div>
+
+        <div className="lg:col-span-5 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <div className="relative max-w-sm mx-auto">
+            <div className="absolute -inset-4 bg-accent-gradient opacity-20 blur-2xl rounded-full" />
+            <div className="relative aspect-[4/5] rounded-md overflow-hidden shadow-warm border border-border/60 bg-card">
+              <img
+                src={portrait}
+                alt="Porträt von Dr. Valentin Katter, Mathematikdidaktiker"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-md px-4 py-3 shadow-soft">
+              <p className="text-xs text-muted-foreground">Universität Bielefeld · IDM</p>
+            </div>
           </div>
         </div>
       </div>
