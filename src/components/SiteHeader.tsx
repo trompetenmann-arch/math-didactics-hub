@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#about", label: "Über mich" },
+  { href: "#news", label: "Aktuelles" },
   { href: "#research", label: "Forschung" },
   { href: "#projects", label: "Projekte" },
   { href: "#teaching", label: "Lehre" },
   { href: "#publications", label: "Publikationen" },
-  { href: "#news", label: "Aktuelles" },
   { href: "#contact", label: "Kontakt" },
 ];
 
