@@ -3,27 +3,27 @@ import { SectionHeading } from "@/components/SectionHeading";
 const areas = [
   {
     n: "01",
-    title: "Grundvorstellungen zur Trigonometrie",
-    body: "Wie bauen Lernende tragfähige Vorstellungen vom Sinus auf — zwischen Dreieck, Einheitskreis und periodischer Funktion? Untersuchungen zu Vorstellungswechseln und didaktischen Brücken.",
-    tags: ["Sekundarstufe II", "Vorstellungswechsel"],
+    title: "KI im Mathematikunterricht",
+    body: "Wie beeinflussen Large Language Models die Entwicklung mathematischen Denkens und Handelns? Studien zu Modellierungsprozessen, Darstellungswechseln und individuellem Feedback durch generative KI — u. a. im Projekt KIBEBA zur Fehlerreflexion mit der BEBA-Strategie.",
+    tags: ["LLMs", "Modellieren", "Feedback", "Design Research"],
   },
   {
     n: "02",
-    title: "Grundvorstellungen in der Stochastik",
-    body: "Wahrscheinlichkeit verstehen heißt, mehrere Sichtweisen zu integrieren: frequentistisch, subjektiv, kombinatorisch. Wie gelingt das im Unterricht?",
-    tags: ["Wahrscheinlichkeit", "Vorstellungsorientierung"],
+    title: "Stoffdidaktische Forschung",
+    body: "Didaktisch orientierte Sachanalysen als Grundlage theoriegeleiteter Vermittlungskonzepte — empirisch validiert durch qualitative Fallstudien. Schwerpunkt auf funktionalem Denken, Differential- und Integralrechnung.",
+    tags: ["Sachanalyse", "Qualitative Inhaltsanalyse"],
   },
   {
     n: "03",
-    title: "Grundvorstellungen in der Analysis",
-    body: "Ableitung als lokale Änderungsrate, Integral als (re-)konstruierte Größe — empirische Studien zu Lernpfaden zentraler Begriffe.",
-    tags: ["Ableitung", "Integral"],
+    title: "Grundvorstellungen zur Trigonometrie",
+    body: "Wie bauen Lernende tragfähige Vorstellungen vom Sinus auf — zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
+    tags: ["Sinusfunktion", "Vorstellungswechsel", "Sek. II"],
   },
   {
     n: "04",
-    title: "Digitale Medien im Mathematikunterricht",
-    body: "Funktionale Verwendung von GeoGebra, dynamischen Visualisierungen und KI-gestützten Werkzeugen zur Förderung mathematischen Verständnisses.",
-    tags: ["GeoGebra", "Visualisierung", "KI"],
+    title: "Funktionales Denken & Analysis",
+    body: "Ableitung als lokale Änderungsrate, Richtungsableitung über Zylinderschnitte, periodische Prozesse mit dem digitalen Federpendel — enaktive Zugänge zu zentralen Begriffen der Analysis.",
+    tags: ["Ableitung", "Funktionales Denken", "Enaktiv"],
   },
 ];
 
@@ -33,7 +33,7 @@ export const Research = () => (
       <SectionHeading
         eyebrow="Forschung"
         title={<>Forschungs­schwerpunkte</>}
-        intro="Vier verbundene Stränge — getragen von der Frage, wie sich mathematische Begriffe im Kopf der Lernenden bilden."
+        intro="Zwei zentrale Themenbereiche: Einsatz von KI beim Mathematiklernen und stoffdidaktische Forschung — getragen von der Frage, wie sich mathematische Begriffe im Kopf der Lernenden bilden."
       />
 
       <div className="grid md:grid-cols-2 gap-6">

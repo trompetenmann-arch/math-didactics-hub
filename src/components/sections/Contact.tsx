@@ -24,12 +24,34 @@ export const Contact = () => (
       <div className="lg:col-span-7">
         <div className="grid sm:grid-cols-2 gap-px rounded-md overflow-hidden border border-border bg-border">
           {[
-            { label: "E-Mail", value: "valentin.katter@uni-beispiel.de", href: "mailto:valentin.katter@uni-beispiel.de" },
-            { label: "Telefon", value: "+49 (0)123 / 456 78-90", href: "tel:+4912345678990" },
-            { label: "Anschrift", value: "Institut für Mathematikdidaktik\nUniversitätsstraße 1, 12345 Musterstadt" },
-            { label: "Sprechstunde", value: "Donnerstag, 14–16 Uhr\nRaum 3.215" },
-            { label: "ORCID", value: "0000-0000-0000-0000", href: "https://orcid.org" },
-            { label: "ResearchGate", value: "Profil ansehen →", href: "https://researchgate.net" },
+            {
+              label: "E-Mail",
+              value: "vkatter@uni-bielefeld.de",
+              href: "mailto:vkatter@uni-bielefeld.de",
+            },
+            {
+              label: "Institut",
+              value: "Institut für Didaktik der Mathematik (IDM)\nUniversität Bielefeld",
+            },
+            {
+              label: "Schule",
+              value: "Rudolf-Steiner-Schule Bielefeld",
+            },
+            {
+              label: "eKVV Bielefeld",
+              value: "Profil ansehen →",
+              href: "https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=78762114",
+            },
+            {
+              label: "ResearchGate",
+              value: "Valentin Katter →",
+              href: "https://www.researchgate.net/profile/Valentin-Katter",
+            },
+            {
+              label: "LinkedIn",
+              value: "Profil ansehen →",
+              href: "https://www.linkedin.com/in/valentin-katter-74b142402/",
+            },
           ].map((c) => {
             const Inner = (
               <>
@@ -41,6 +63,8 @@ export const Contact = () => (
               <a
                 key={c.label}
                 href={c.href}
+                target={c.href.startsWith("http") ? "_blank" : undefined}
+                rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="p-6 bg-card hover:bg-secondary/50 transition-colors group"
               >
                 {Inner}
@@ -60,7 +84,7 @@ export const Contact = () => (
 export const SiteFooter = () => (
   <footer className="border-t border-border bg-background py-10">
     <div className="container flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-      <p>© {new Date().getFullYear()} Dr. Valentin Katter</p>
+      <p>© {new Date().getFullYear()} Dr. Valentin Katter · Mathematikdidaktik</p>
       <div className="flex gap-6">
         <a href="#" className="hover:text-foreground transition-colors">Impressum</a>
         <a href="#" className="hover:text-foreground transition-colors">Datenschutz</a>

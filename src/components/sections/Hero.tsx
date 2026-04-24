@@ -1,4 +1,4 @@
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/portrait.png";
 
 export const Hero = () => {
   return (
@@ -34,14 +34,15 @@ export const Hero = () => {
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-balance mb-6">
-            Dr. Valentin{" "}
-            <span className="italic text-highlight">Katter</span>
+            Mathematik lernen —{" "}
+            <span className="italic text-highlight">mit und ohne KI</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed text-balance">
-            Ich erforsche, wie Lernende tragfähige{" "}
-            <em className="text-foreground not-italic font-medium">Grundvorstellungen</em>{" "}
-            zu mathematischen Begriffen entwickeln — in Trigonometrie, Stochastik und Analysis — und wie digitale Medien diesen Prozess sinnstiftend unterstützen können.
+            Postdoc am Institut für Didaktik der Mathematik (IDM) der{" "}
+            <em className="text-foreground not-italic font-medium">Universität Bielefeld</em>{" "}
+            und Lehrer an der Rudolf-Steiner Schule. Ich forsche zu Grundvorstellungen
+            mathematischer Begriffe und zum Einsatz von Künstlicher Intelligenz im Mathematikunterricht.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-10">
@@ -60,18 +61,33 @@ export const Hero = () => {
             </a>
           </div>
 
-          <dl className="grid grid-cols-3 gap-8 mt-14 max-w-md">
-            {[
-              { k: "12+", v: "Publikationen" },
-              { k: "8", v: "Lehrveranstaltungen" },
-              { k: "30+", v: "Betreute Arbeiten" },
-            ].map((s) => (
-              <div key={s.v}>
-                <dt className="font-serif text-3xl text-highlight">{s.k}</dt>
-                <dd className="text-xs text-muted-foreground mt-1">{s.v}</dd>
-              </div>
-            ))}
-          </dl>
+          <div className="flex flex-wrap items-center gap-5 mt-10">
+            <span className="text-xs uppercase tracking-wider text-muted-foreground">Profile:</span>
+            <a
+              href="https://www.researchgate.net/profile/Valentin-Katter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
+            >
+              ResearchGate
+            </a>
+            <a
+              href="https://www.linkedin.com/in/valentin-katter-74b142402/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=78762114"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
+            >
+              eKVV Bielefeld
+            </a>
+          </div>
         </div>
 
         <div className="lg:col-span-5 animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -81,13 +97,11 @@ export const Hero = () => {
               <img
                 src={portrait}
                 alt="Porträt von Dr. Valentin Katter, Mathematikdidaktiker"
-                width={1024}
-                height={1280}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-md px-4 py-3 shadow-soft">
-              <p className="text-xs text-muted-foreground">Universität · Institut für Mathematikdidaktik</p>
+              <p className="text-xs text-muted-foreground">Universität Bielefeld · IDM</p>
             </div>
           </div>
         </div>
