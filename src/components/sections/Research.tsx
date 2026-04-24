@@ -4,19 +4,19 @@ const areas = [
   {
     n: "01",
     title: "KI im Mathematikunterricht",
-    body: "Wie beeinflussen Large Language Models die Entwicklung mathematischen Denkens und Handelns? Studien zu Modellierungsprozessen, Darstellungswechseln und individuellem Feedback durch generative KI — u. a. im Projekt KIBEBA zur Fehlerreflexion mit der BEBA-Strategie.",
+    body: "Wie beeinflussen Large Language Models die Entwicklung mathematischen Denkens und Handelns? Studien zu Modellierungsprozessen, Darstellungswechseln und individuellem Feedback durch generative KI u. a. in den Projekten CaTS und KIBEBA.",
     tags: ["LLMs", "Modellieren", "Feedback", "Design Research"],
   },
   {
     n: "02",
     title: "Stoffdidaktische Forschung",
-    body: "Didaktisch orientierte Sachanalysen als Grundlage theoriegeleiteter Vermittlungskonzepte — empirisch validiert durch qualitative Fallstudien. Schwerpunkt auf funktionalem Denken, Differential- und Integralrechnung.",
+    body: "Didaktisch orientierte Sachanalysen zur theoriegeleiteten Herleitung von Grundvorstellungen, empirisch validiert durch qualitative Fallstudien. ",
     tags: ["Sachanalyse", "Qualitative Inhaltsanalyse"],
   },
   {
     n: "03",
     title: "Grundvorstellungen zur Trigonometrie",
-    body: "Wie bauen Lernende tragfähige Vorstellungen vom Sinus auf — zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
+    body: "Wie bauen Lernende tragfähige Vorstellungen zum Sinus auf  zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
     tags: ["Sinusfunktion", "Vorstellungswechsel", "Sek. II"],
   },
   {
