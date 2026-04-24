@@ -2,22 +2,40 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const news = [
   {
-    date: "April 2026",
-    tag: "Vortrag",
-    title: "Eingeladener Vortrag auf der GDM-Jahrestagung in Bremen",
-    body: "Zum Thema »Vorstellungswechsel in der Trigonometrie — empirische Befunde und didaktische Konsequenzen«.",
-  },
-  {
-    date: "März 2026",
-    tag: "Publikation",
-    title: "Neuer Artikel im Journal für Mathematik-Didaktik erschienen",
-    body: "Eine empirische Rekonstruktion von Grundvorstellungen zum Sinus, gemeinsam mit A. Müller.",
-  },
-  {
-    date: "Januar 2026",
+    date: "SoSe 2026",
     tag: "Lehre",
-    title: "Neue Lernumgebung zur Stochastik veröffentlicht",
-    body: "Frei verfügbare GeoGebra-Materialien für die Sek. I — entwickelt im Rahmen des TriViz-Projekts.",
+    title: "Neues Seminar: KI für den Mathematikunterricht",
+    body: "Entwicklung und Erprobung KI-gestützter Unterrichtsmaterialien — neu im Lehrangebot der Universität Bielefeld.",
+  },
+  {
+    date: "2025",
+    tag: "Drittmittel",
+    title: "Math CaTS gestartet",
+    body: "Vom Bielefelder Nachwuchsfond mit 15.000 € gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit Prof. Salle und Prof. Wolff.",
+  },
+  {
+    date: "2025",
+    tag: "Publikation",
+    title: "JMD-Artikel zur Sinusfunktion erschienen",
+    body: "„Didaktisch orientierte Sachanalysen zur Ausdifferenzierung funktionaler Grundvorstellungen“ im Journal für Mathematik-Didaktik.",
+  },
+  {
+    date: "2025",
+    tag: "Vortrag",
+    title: "Netzwerktagung Mathematik (NLQ)",
+    body: "Vortrag „KI aus Schülerperspektive“ beim Niedersächsischen Landesinstitut für schulische Qualitätsentwicklung.",
+  },
+  {
+    date: "2024",
+    tag: "International",
+    title: "INEM-Lehrerfortbildung in Chile",
+    body: "Workshops zu „Grundvorstellungen de las funciones trigonométricas & exponentiales“ an der Universidad Católica del Norte, Antofagasta.",
+  },
+  {
+    date: "2024",
+    tag: "Praxis",
+    title: "Federpendel-Beitrag in mathematik lehren",
+    body: "„Das digitale Federpendel — virtuell-enaktiv zu periodischen Prozessen“ (mit Bulthaup & Jetses).",
   },
 ];
 
@@ -27,10 +45,10 @@ export const News = () => (
       <SectionHeading
         eyebrow="Aktuelles"
         title="Neuigkeiten & Termine"
-        intro="Vorträge, Veröffentlichungen und kleine Notizen aus Forschung und Lehre."
+        intro="Vorträge, Veröffentlichungen und Notizen aus Forschung und Lehre."
       />
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {news.map((n) => (
           <article
             key={n.title}
