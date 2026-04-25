@@ -15,9 +15,9 @@ export const Contact = () => (
     <div className="container relative grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-5">
         <SectionHeading
-          eyebrow="Kontakt"
+          eyebrow="KONTAKT"
           title={<>Im Gespräch <em className="italic text-highlight">bleiben</em>.</>}
-          intro="Für Kooperationen, Anfragen zu Vorträgen, Betreuungsanfragen oder fachlichen Austausch — ich freue mich, von Ihnen zu hören."
+          intro={<>Für Kooperationen, Anfragen zu Vorträgen, Betreuungsanfragen oder fachlichen Austausch.<br /><br />Ich freue mich, von Ihnen zu hören.</>}
         />
       </div>
 
@@ -25,30 +25,30 @@ export const Contact = () => (
         <div className="grid sm:grid-cols-2 gap-px rounded-md overflow-hidden border border-border bg-border">
           {[
             {
-              label: "E-Mail",
+              label: "E-MAIL",
               value: "vkatter@uni-bielefeld.de",
               href: "mailto:vkatter@uni-bielefeld.de",
             },
             {
-              label: "Institut",
+              label: "INSTITUT",
               value: "Institut für Didaktik der Mathematik (IDM)\nUniversität Bielefeld",
             },
             {
-              label: "Schule",
+              label: "SCHULE",
               value: "Rudolf-Steiner-Schule Bielefeld",
             },
             {
-              label: "eKVV Bielefeld",
+              label: "EKVV BIELEFELD",
               value: "Profil ansehen →",
               href: "https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=78762114",
             },
             {
-              label: "ResearchGate",
+              label: "RESEARCHGATE",
               value: "Valentin Katter →",
               href: "https://www.researchgate.net/profile/Valentin-Katter",
             },
             {
-              label: "LinkedIn",
+              label: "LINKEDIN",
               value: "Profil ansehen →",
               href: "https://www.linkedin.com/in/valentin-katter-74b142402/",
             },

@@ -4,19 +4,19 @@ const current = [
   {
     title: "Math CaTS — Chatbots als Tutor in Schulen",
     period: "seit 2025",
-    funder: "Bielefelder Nachwuchsfond (15.000 €)",
+    funder: "Bielefelder Nachwuchsfond",
     body: "Untersuchung, wie ChatGPT die mathematische Leistung von Lernenden der Sekundarstufe I beeinflusst — in Kooperation mit Prof. Dr. Alexander Salle (Mathematikdidaktik) und Prof. Dr. Fabian Wolff (Psychologie).",
   },
   {
     title: "DiLeMath — Digitale Lernplattformen im Mathematikunterricht",
     period: "seit 2024",
-    funder: "Qualitätsfond für Lehre (10.000 €)",
+    funder: "Qualitätsfond für Lehre ",
     body: "Studierende sammeln Erfahrungen mit digitalen Plattformen und KI-Tools (fobizz, bettermarks, studyly, mathegym, Anton u. v. m.) und entwickeln Kriterien für eine kritische Bewertung.",
   },
   {
     title: "KIVIMA — KI-gestützte Visualisierungen im Mathematikunterricht",
     period: "ab 2026",
-    funder: "Qualitätsfond für Lehre (beantragt, 10.000 €)",
+    funder: "Qualitätsfond für Lehre#\n\n",
     body: "Praxisorientierte Lerngelegenheiten im Lehramtsstudium Mathematik: KI-gestützte Entwicklung und Erprobung dynamischer Visualisierungen.",
   },
 ];
