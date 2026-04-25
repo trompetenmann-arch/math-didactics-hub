@@ -5,7 +5,7 @@ export const SectionHeading = ({
 }: {
   eyebrow: string;
   title: React.ReactNode;
-  intro?: string;
+  intro?: React.ReactNode;
 }) => (
   <div className="max-w-3xl mb-14">
     <div className="inline-flex items-center gap-2 mb-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
