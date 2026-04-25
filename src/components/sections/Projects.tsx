@@ -62,7 +62,7 @@ const Item = ({ p, i }: { p: typeof current[number]; i: number }) => (
     </div>
     <div className="md:col-span-3 md:text-right">
       <span className="text-xs uppercase tracking-wider text-muted-foreground">Förderung</span>
-      <p className="text-sm font-medium mt-1">{p.funder}</p>
+      <p className="text-sm font-medium mt-1 whitespace-pre-line">{p.funder}</p>
     </div>
   </div>
 );
