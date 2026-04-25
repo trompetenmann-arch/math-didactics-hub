@@ -48,8 +48,8 @@ export const Teaching = () => (
     <div className="container">
       <SectionHeading
         eyebrow="Lehre"
-        title={<>Lehre als <em className="italic text-highlight">Werkstatt</em>.</>}
-        intro="Studierende erfahren Mathematikdidaktik nicht nur als Theorie, sondern als reflektierte Praxis — mit besonderem Augenmerk auf den sinnvollen Einsatz digitaler Hilfsmittel und KI-Tools."
+        title={<>Lehre, Didaktik und Mathematik</>}
+        intro="Studierende erfahren Mathematikdidaktik nicht nur als Theorie, sondern als reflektierte Praxis, mit besonderem Augenmerk auf den sinnvollen Einsatz digitaler Hilfsmittel und KI-Tools."
       />
 
       <div className="grid lg:grid-cols-3 gap-10 mb-20">

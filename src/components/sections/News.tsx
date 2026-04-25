@@ -11,7 +11,7 @@ const news = [
     date: "2025",
     tag: "Drittmittel",
     title: "Math CaTS gestartet",
-    body: "Vom Bielefelder Nachwuchsfond mit 15.000 € gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit Prof. Salle und Prof. Wolff.",
+    body: "Vom Bielefelder Nachwuchsfond gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit Prof. Salle und Prof. Wolff.",
   },
   {
     date: "2025",
