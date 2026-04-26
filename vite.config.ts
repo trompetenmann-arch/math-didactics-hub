@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/math-didactics-hub/",
+  base: mode === "production" ? "/math-didactics-hub/" : "/",
   server: {
     host: "::",
     port: 8080,
