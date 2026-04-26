@@ -3,12 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
-const githubPagesBase = repositoryName ? `/${repositoryName}/` : "/";
-
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? githubPagesBase : "/",
+  base: "/math-didactics-hub/",
   server: {
     host: "::",
     port: 8080,
