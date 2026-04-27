@@ -14,6 +14,16 @@ export const SiteHeader = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const scrollToSection = (href: string) => {
+    const sectionId = href.replace("#", "");
+    const target = document.getElementById(sectionId);
+
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    setOpen(false);
+  };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -30,20 +40,25 @@ export const SiteHeader = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a href="#top" className="font-serif text-lg font-semibold tracking-tight">
+        <button
+          type="button"
+          onClick={() => scrollToSection("#top")}
+          className="font-serif text-lg font-semibold tracking-tight"
+        >
           V<span className="text-accent">·</span>Katter
-        </a>
+        </button>
 
         <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
-            <a
+            <button
               key={l.href}
-              href={l.href}
+              type="button"
+              onClick={() => scrollToSection(l.href)}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
             >
               {l.label}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -62,14 +77,14 @@ export const SiteHeader = () => {
         <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-md">
           <nav className="container flex flex-col py-4">
             {links.map((l) => (
-              <a
+              <button
                 key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
+                type="button"
+                onClick={() => scrollToSection(l.href)}
                 className="py-2.5 text-sm text-muted-foreground hover:text-foreground"
               >
                 {l.label}
-              </a>
+              </button>
             ))}
           </nav>
         </div>
