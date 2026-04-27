@@ -1,23 +1,58 @@
 import { SectionHeading } from "@/components/SectionHeading";
+import type { ReactNode } from "react";
 
-const news = [
+const news: { date: string; tag: string; title: string; body: ReactNode }[] = [
   {
     date: "SoSe 2026",
     tag: "Lehre",
     title: "Neues Seminar: KI für den Mathematikunterricht",
-    body: "Entwicklung und Erprobung KI-gestützter Unterrichtsmaterialien — neu im Lehrangebot der Universität Bielefeld.",
+    body: (
+      <>
+        Entwicklung und Erprobung KI-gestützter Unterrichtsmaterialien — neu im Lehrangebot der Universität
+        Bielefeld, gefördert vom Qualitätsfond für Lehre.{" "}
+        <a href="https://kivima.eu" target="_blank" rel="noreferrer" className="text-highlight hover:underline">
+          kivima.eu
+        </a>
+      </>
+    ),
   },
   {
     date: "2025",
     tag: "Drittmittel",
     title: "Math CaTS gestartet",
-    body: "Vom Bielefelder Nachwuchsfond gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit Prof. Salle und Prof. Wolff.",
+    body: (
+      <>
+        Vom Bielefelder Nachwuchsfond gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit
+        Prof. Salle und Prof. Wolff.{" "}
+        <a
+          href="https://www.uni-bielefeld.de/fakultaeten/psychologie/abteilung/arbeitseinheiten/16/projekte/laufende/cats/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-highlight hover:underline"
+        >
+          Mehr zu Math CaTS
+        </a>
+      </>
+    ),
   },
   {
     date: "2025",
     tag: "Publikation",
     title: "JMD-Artikel zur Sinusfunktion erschienen",
-    body: "„Didaktisch orientierte Sachanalysen zur Ausdifferenzierung funktionaler Grundvorstellungen“ im Journal für Mathematik-Didaktik.",
+    body: (
+      <>
+        „Didaktisch orientierte Sachanalysen zur Ausdifferenzierung funktionaler Grundvorstellungen“ im Journal für
+        Mathematik-Didaktik.{" "}
+        <a
+          href="https://link.springer.com/article/10.1007/s13138-024-00244-6"
+          target="_blank"
+          rel="noreferrer"
+          className="text-highlight hover:underline"
+        >
+          Zum Artikel
+        </a>
+      </>
+    ),
   },
   {
     date: "2025",
