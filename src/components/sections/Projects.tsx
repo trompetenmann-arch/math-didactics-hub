@@ -6,6 +6,8 @@ const current = [
     period: "seit 2025",
     funder: "Bielefelder Nachwuchsfond",
     body: "Untersuchung, wie ChatGPT die mathematische Leistung von Lernenden der Sekundarstufe I beeinflusst — in Kooperation mit Prof. Dr. Alexander Salle (Mathematikdidaktik) und Prof. Dr. Fabian Wolff (Psychologie).",
+    link: "https://www.uni-bielefeld.de/fakultaeten/psychologie/abteilung/arbeitseinheiten/16/projekte/laufende/cats/",
+    linkLabel: "Zu Math CaTS",
   },
   {
     title: "DiLeMath — Digitale Lernplattformen im Mathematikunterricht",
@@ -18,6 +20,8 @@ const current = [
     period: "ab 2026",
     funder: "Qualitätsfond für Lehre#\n\n",
     body: "Praxisorientierte Lerngelegenheiten im Lehramtsstudium Mathematik: KI-gestützte Entwicklung und Erprobung dynamischer Visualisierungen.",
+    link: "https://kivima.eu",
+    linkLabel: "kivima.eu",
   },
 ];
 
@@ -53,6 +57,16 @@ const Item = ({ p, i }: { p: typeof current[number]; i: number }) => (
     <div className="md:col-span-2 text-sm text-muted-foreground">
       <span className="font-serif text-2xl text-highlight block">{String(i + 1).padStart(2, "0")}</span>
       <span className="text-xs uppercase tracking-wider mt-1 block">{p.period}</span>
+      {("link" in p && p.link) ? (
+        <a
+          href={p.link}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 inline-flex items-center rounded-full bg-highlight text-highlight-foreground px-3 py-1.5 text-xs font-semibold hover:opacity-90 transition-opacity"
+        >
+          {p.linkLabel ?? "Projektseite"}
+        </a>
+      ) : null}
     </div>
     <div className="md:col-span-7">
       <h3 className="font-serif text-xl md:text-2xl mb-2 group-hover:text-highlight transition-colors leading-snug">

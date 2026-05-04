@@ -1,6 +1,17 @@
 import portrait from "@/assets/portrait.png";
+import type { MouseEvent } from "react";
 
 export const Hero = () => {
+  const scrollToSection = (event: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const headerOffset = 72;
+    const top = section.getBoundingClientRect().top + window.scrollY - headerOffset;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <section id="top" className="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-warm grain">
       {/* Decorative math curve */}
@@ -47,7 +58,8 @@ export const Hero = () => {
 
           <div className="flex flex-wrap gap-3 mt-10">
             <a
-              href="#research"
+              href="#projects"
+              onClick={(event) => scrollToSection(event, "projects")}
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:shadow-warm transition-all"
             >
               Forschung entdecken
@@ -55,6 +67,7 @@ export const Hero = () => {
             </a>
             <a
               href="#contact"
+              onClick={(event) => scrollToSection(event, "contact")}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-sm font-medium hover:bg-secondary transition-all"
             >
               Kontakt aufnehmen
