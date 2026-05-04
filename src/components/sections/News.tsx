@@ -3,6 +3,17 @@ import type { ReactNode } from "react";
 
 const news: { date: string; tag: string; title: string; body: ReactNode }[] = [
   {
+    date: "Mai 2026",
+    tag: "Publikation",
+    title: "Themenheft in mathematik lehren erschienen",
+    body: (
+      <>
+        Das Themenheft „mit Flächeninhalten Mathe verstehen“ der Zeitschrift „mathematik lehren“ ist erschienen,
+        gemeinsam herausgegeben mit Daniel Frohn.
+      </>
+    ),
+  },
+  {
     date: "SoSe 2026",
     tag: "Lehre",
     title: "Neues Seminar: KI für den Mathematikunterricht",
