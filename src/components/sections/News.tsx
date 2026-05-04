@@ -28,6 +28,8 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         </a>
       </>
     ),
+    image: "/kivima-logo.png",
+    imageAlt: "KIVIMA-Logo",
   },
   {
     date: "2025",
@@ -47,6 +49,8 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         </a>
       </>
     ),
+    image: "/math_cats-logo.jpg",
+    imageAlt: "Math CaTS-Logo",
   },
   {
     date: "2025",
