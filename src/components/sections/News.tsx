@@ -1,7 +1,20 @@
 import { SectionHeading } from "@/components/SectionHeading";
 import type { ReactNode } from "react";
 
-const news: { date: string; tag: string; title: string; body: ReactNode }[] = [
+const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
+  {
+    date: "Mai 2026",
+    tag: "Publikation",
+    title: "Themenheft in mathematik lehren erschienen",
+    body: (
+      <>
+        Das Themenheft „mit Flächeninhalten Mathe verstehen“ der Zeitschrift „mathematik lehren“ ist erschienen,
+        gemeinsam herausgegeben mit Daniel Frohn.
+      </>
+    ),
+    image: "/mathematiklehren_255_linkedin.jpg",
+    imageAlt: "Titelbild des Themenhefts 'mit Flächeninhalten Mathe verstehen' in mathematik lehren",
+  },
   {
     date: "Mai 2026",
     tag: "Publikation",
@@ -109,6 +122,14 @@ export const News = () => (
             <h3 className="font-serif text-xl leading-snug mb-3 group-hover:text-highlight transition-colors">
               {n.title}
             </h3>
+            {n.image ? (
+              <img
+                src={n.image}
+                alt={n.imageAlt ?? "Beitragsbild"}
+                className="w-full h-auto rounded-md mb-4 border border-border/70"
+                loading="lazy"
+              />
+            ) : null}
             <p className="text-sm text-muted-foreground leading-relaxed">{n.body}</p>
           </article>
         ))}
