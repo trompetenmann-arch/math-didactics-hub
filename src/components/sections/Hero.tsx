@@ -47,7 +47,7 @@ export const Hero = () => {
 
           <div className="flex flex-wrap gap-3 mt-10">
             <a
-              href="#research"
+              href="#projects"
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:shadow-warm transition-all"
             >
               Forschung entdecken
