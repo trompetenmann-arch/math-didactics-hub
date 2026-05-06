@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export const Contact = () => (
@@ -86,8 +87,8 @@ export const SiteFooter = () => (
     <div className="container flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
       <p>© {new Date().getFullYear()} Dr. Valentin Katter · Mathematikdidaktik</p>
       <div className="flex gap-6">
-        <a href="#" className="hover:text-foreground transition-colors">Impressum</a>
-        <a href="#" className="hover:text-foreground transition-colors">Datenschutz</a>
+        <Link to="/impressum" className="hover:text-foreground transition-colors">Impressum</Link>
+        <Link to="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</Link>
       </div>
     </div>
   </footer>
