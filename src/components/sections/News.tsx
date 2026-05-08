@@ -3,6 +3,14 @@ import type { ReactNode } from "react";
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
   {
+    date: "2026",
+    tag: "Vortrag",
+    title: "Mathematikdidaktisches Kolloquium in Siegen",
+    body: "Vortrag zu Anwendungs- und Forschungsperspektiven von KI im Mathematikunterricht mit Einblicken in KIVIMA und Math-CaTs.",
+    image: "/linkedin_post_uni_siegen.jpg",
+    imageAlt: "LinkedIn-Post zum Vortrag im Mathematikdidaktischen Kolloquium der Universität Siegen",
+  },
+  {
     date: "Mai 2026",
     tag: "Publikation",
     title: "Themenheft in mathematik lehren erschienen",
