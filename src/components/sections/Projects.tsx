@@ -2,6 +2,14 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const current = [
   {
+    title: "KIVIMA — KI-gestützte Visualisierungen im Mathematikunterricht",
+    period: "ab 2026",
+    funder: "Qualitätsfond für Lehre#\n\n",
+    body: "Praxisorientierte Lerngelegenheiten im Lehramtsstudium Mathematik: KI-gestützte Entwicklung und Erprobung dynamischer Visualisierungen.",
+    link: "https://kivima.eu",
+    linkLabel: "kivima.eu",
+  },
+  {
     title: "Math CaTS — Chatbots als Tutor in Schulen",
     period: "seit 2025",
     funder: "Bielefelder Nachwuchsfond",
@@ -14,14 +22,6 @@ const current = [
     period: "seit 2024",
     funder: "Qualitätsfond für Lehre ",
     body: "Studierende sammeln Erfahrungen mit digitalen Plattformen und KI-Tools (fobizz, bettermarks, studyly, mathegym, Anton u. v. m.) und entwickeln Kriterien für eine kritische Bewertung.",
-  },
-  {
-    title: "KIVIMA — KI-gestützte Visualisierungen im Mathematikunterricht",
-    period: "ab 2026",
-    funder: "Qualitätsfond für Lehre#\n\n",
-    body: "Praxisorientierte Lerngelegenheiten im Lehramtsstudium Mathematik: KI-gestützte Entwicklung und Erprobung dynamischer Visualisierungen.",
-    link: "https://kivima.eu",
-    linkLabel: "kivima.eu",
   },
 ];
 
@@ -52,10 +52,9 @@ const past = [
   },
 ];
 
-const Item = ({ p, i }: { p: typeof current[number]; i: number }) => (
+const Item = ({ p }: { p: typeof current[number] }) => (
   <div className="group grid md:grid-cols-12 gap-4 p-6 md:p-8 bg-card hover:bg-secondary/40 transition-colors">
     <div className="md:col-span-2 text-sm text-muted-foreground">
-      <span className="font-serif text-2xl text-highlight block">{String(i + 1).padStart(2, "0")}</span>
       <span className="text-xs uppercase tracking-wider mt-1 block">{p.period}</span>
       {("link" in p && p.link) ? (
         <a
@@ -91,15 +90,15 @@ export const Projects = () => (
       />
 
       <div className="space-y-px rounded-md overflow-hidden border border-border/70 bg-card shadow-soft">
-        {current.map((p, i) => (
-          <Item key={p.title} p={p} i={i} />
+        {current.map((p) => (
+          <Item key={p.title} p={p} />
         ))}
       </div>
 
       <h3 className="font-serif text-2xl mt-16 mb-6">Abgeschlossene Projekte</h3>
       <div className="space-y-px rounded-md overflow-hidden border border-border/70 bg-card shadow-soft">
-        {past.map((p, i) => (
-          <Item key={p.title} p={p} i={i} />
+        {past.map((p) => (
+          <Item key={p.title} p={p} />
         ))}
       </div>
     </div>

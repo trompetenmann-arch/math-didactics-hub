@@ -2,25 +2,21 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const areas = [
   {
-    n: "01",
     title: "KI im Mathematikunterricht",
     body: "Wie beeinflussen Large Language Models die Entwicklung mathematischen Denkens und Handelns? Studien zu Modellierungsprozessen, Darstellungswechseln und individuellem Feedback durch generative KI u. a. in den Projekten CaTS und KIBEBA.",
     tags: ["LLMs", "Modellieren", "Feedback", "Design Research"],
   },
   {
-    n: "02",
     title: "Stoffdidaktische Forschung",
     body: "Didaktisch orientierte Sachanalysen zur theoriegeleiteten Herleitung von Grundvorstellungen, empirisch validiert durch qualitative Fallstudien. ",
     tags: ["Sachanalyse", "Qualitative Inhaltsanalyse"],
   },
   {
-    n: "03",
     title: "Grundvorstellungen zur Trigonometrie",
     body: "Wie bauen Lernende tragfähige Vorstellungen zum Sinus auf  zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
     tags: ["Sinusfunktion", "Vorstellungswechsel", "Sek. II"],
   },
   {
-    n: "04",
     title: "Funktionales Denken & Analysis",
     body: "Ableitung als lokale Änderungsrate, Richtungsableitung über Zylinderschnitte, periodische Prozesse mit dem digitalen Federpendel — enaktive Zugänge zu zentralen Begriffen der Analysis.",
     tags: ["Ableitung", "Funktionales Denken", "Enaktiv"],
@@ -39,12 +35,11 @@ export const Research = () => (
       <div className="grid md:grid-cols-2 gap-6">
         {areas.map((a) => (
           <article
-            key={a.n}
+            key={a.title}
             className="group relative p-8 lg:p-10 rounded-md bg-card border border-border/70 shadow-soft hover:shadow-warm transition-all duration-500 hover:-translate-y-1"
           >
-            <div className="flex items-start justify-between mb-5">
-              <span className="font-serif text-sm text-accent">{a.n}</span>
-              <span className="h-px flex-1 mt-3 ml-4 bg-border group-hover:bg-accent transition-colors" />
+            <div className="mb-5">
+              <span className="h-px block w-full bg-border group-hover:bg-accent transition-colors" />
             </div>
             <h3 className="font-serif text-2xl mb-3 leading-tight">{a.title}</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">{a.body}</p>

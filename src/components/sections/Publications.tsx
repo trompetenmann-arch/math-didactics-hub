@@ -2,6 +2,20 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const pubs = [
   {
+    year: "2026",
+    type: "Zeitschriftenaufsatz · PUB-ID: 3016436",
+    co: "Katter, V.; Frohn, D.",
+    title: "Das Produkt als Flächeninhalt - Grundvorstellungen zur Multiplikation anhand geometrischer Deutungen entwickeln",
+    venue: "mathematik lehren 255, 2–8",
+  },
+  {
+    year: "2026",
+    type: "Zeitschriftenaufsatz · PUB-ID: 3016437",
+    co: "Katter, V.; Lotz, J.",
+    title: "Flächeninhaltsfunktionen ableiten - Ein inhaltlich-anschaulicher Beweis des Hauptsatzes der Integral- und Differentialrechnung",
+    venue: "mathematik lehren 255, 42–45",
+  },
+  {
     year: "accepted",
     type: "Artikel · peer reviewed",
     co: "Katter, V.; Huget, J.",
