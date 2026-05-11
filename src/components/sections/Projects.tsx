@@ -86,7 +86,7 @@ export const Projects = () => (
       <SectionHeading
         eyebrow="Projekte & Drittmittel"
         title="Aktuelle Forschungs­projekte"
-        intro="Drittmittelgeförderte Vorhaben, in denen die Schwerpunkte zu konkreten Studien werden."
+        intro="Lehr- und Forschungsprojekte"
       />
 
       <div className="space-y-px rounded-md overflow-hidden border border-border/70 bg-card shadow-soft">
