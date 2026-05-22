@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">KIMAD Vortrag 22.05.2026</title>
+  <desc id="desc">Titelfolie des Vortrags CATS - Chatbots als Tutoren in der Schule.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f2f2f5"/>
+      <stop offset="100%" stop-color="#ecefe1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="980" y="0" width="620" height="900" fill="#e6e7d8"/>
+  <circle cx="1120" cy="180" r="90" fill="#7fb5b6" opacity="0.9"/>
+  <circle cx="1240" cy="220" r="120" fill="#dce5da" opacity="0.95"/>
+  <circle cx="1320" cy="140" r="80" fill="#355f67" opacity="0.85"/>
+  <rect x="1080" y="260" width="140" height="120" fill="#f0efdf" stroke="#7d8a8b"/>
+  <rect x="1210" y="220" width="210" height="260" fill="#b7cec0" opacity="0.75"/>
+  <rect x="1080" y="360" width="220" height="220" fill="#334b5b" opacity="0.95"/>
+  <rect x="1240" y="380" width="120" height="200" fill="#4f9bb5" opacity="0.75"/>
+  <text x="60" y="80" font-family="Inter, Arial, sans-serif" font-size="28" fill="#3a6ca9">KIMAD - Sitzung</text>
+  <text x="60" y="250" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700" fill="#111">CATS - Chatbots als Tutoren in der</text>
+  <text x="60" y="330" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700" fill="#111">Schule</text>
+  <text x="60" y="420" font-family="Inter, Arial, sans-serif" font-size="56" font-style="italic" fill="#111">Prozessqualität und</text>
+  <text x="60" y="490" font-family="Inter, Arial, sans-serif" font-size="56" font-style="italic" fill="#111">Interaktionsgranularität beim</text>
+  <text x="60" y="560" font-family="Inter, Arial, sans-serif" font-size="56" font-style="italic" fill="#111">mathematischen Modellieren mit</text>
+  <text x="60" y="630" font-family="Inter, Arial, sans-serif" font-size="56" font-style="italic" fill="#111">ChatGPT Voice</text>
+  <text x="60" y="760" font-family="Inter, Arial, sans-serif" font-size="44" fill="#333">Dr. Valentin Katter</text>
+  <text x="60" y="815" font-family="Inter, Arial, sans-serif" font-size="38" fill="#333">Universität Bielefeld</text>
+  <text x="700" y="815" font-family="Inter, Arial, sans-serif" font-size="38" fill="#333">22.05.2026</text>
+</svg>

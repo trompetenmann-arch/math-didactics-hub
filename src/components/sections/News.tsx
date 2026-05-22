@@ -3,6 +3,14 @@ import type { ReactNode } from "react";
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
   {
+    date: "22.05.2026",
+    tag: "Vortrag",
+    title: "Online-Vortrag bei KIMAD",
+    body: "Vorstellung von Math CaTS im Rahmen der KIMAD-Sitzung: „Chatbots als Tutoren in der Schule“ mit Fokus auf Prozessqualität und Interaktionsgranularität beim mathematischen Modellieren mit ChatGPT Voice.",
+    image: "/kimad_cats_vortrag_2026-05-22.svg",
+    imageAlt: "Titelfolie des Online-Vortrags bei KIMAD vom 22.05.2026",
+  },
+  {
     date: "Mai 2026",
     tag: "Vortrag",
     title: "Mathematikdidaktisches Kolloquium in Siegen",
