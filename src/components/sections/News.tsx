@@ -7,7 +7,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     tag: "Vortrag",
     title: "Online-Vortrag bei KIMAD",
     body: "Vorstellung von Math CaTS im Rahmen der KIMAD-Sitzung: „Chatbots als Tutoren in der Schule“ mit Fokus auf Prozessqualität und Interaktionsgranularität beim mathematischen Modellieren mit ChatGPT Voice.",
-    image: "/Siegen_kolloq.png",
+    image: "/KIMAD.png",
     imageAlt: "Bild zum Online-Vortrag bei KIMAD",
   },
   {
