@@ -6,6 +6,7 @@ const links = [
   { href: "#research", label: "Forschung" },
   { href: "#projects", label: "Projekte" },
   { href: "#teaching", label: "Lehre" },
+  { href: "#learning-materials", label: "Lernmaterial" },
   { href: "#publications", label: "Publikationen" },
   { href: "#contact", label: "Kontakt" },
 ];

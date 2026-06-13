@@ -5,6 +5,7 @@ import { News } from "@/components/sections/News";
 import { Research } from "@/components/sections/Research";
 import { Projects } from "@/components/sections/Projects";
 import { Teaching } from "@/components/sections/Teaching";
+import { LearningMaterials } from "@/components/sections/LearningMaterials";
 import { Publications } from "@/components/sections/Publications";
 import { Contact, SiteFooter } from "@/components/sections/Contact";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <Research />
       <Projects />
       <Teaching />
+      <LearningMaterials />
       <Publications />
       <Contact />
       <SiteFooter />
