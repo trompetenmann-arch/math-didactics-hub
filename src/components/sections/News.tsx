@@ -1,7 +1,25 @@
 import { SectionHeading } from "@/components/SectionHeading";
-import type { ReactNode } from "react";
+import { Button } from "@/components/ui/button";
+import { useState, type ReactNode } from "react";
+
+const INITIAL_NEWS_COUNT = 6;
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
+  {
+    date: "05.07.2026",
+    tag: "Workshop",
+    title: "Zwei-Quadrate-Satz bei mathe+",
+    body: (
+      <>
+        Im Rahmen von mathe+ an der Universität Bielefeld habe ich für Schülerinnen und Schüler der 9. und 10. Klasse
+        den Workshop „Die Kunst, Zahlen in Quadrate zu zerlegen“ zum Zwei-Quadrate-Satz von Pierre de Fermat gehalten.
+        Die von „Pi und die Primzahlen“ inspirierten Arbeitsblätter verbinden Zahlentheorie, Windmühlen und
+        Punktegitter und stehen auf meiner Homepage zur Nutzung bereit.
+      </>
+    ),
+    image: "/1781351791173.jpg",
+    imageAlt: "Workshopmaterial zum Zwei-Quadrate-Satz im Rahmen von mathe+",
+  },
   {
     date: "22.05.2026",
     tag: "Vortrag",
@@ -107,42 +125,62 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
   },
 ];
 
-export const News = () => (
-  <section id="news" className="py-24 lg:py-32 bg-background">
-    <div className="container">
-      <SectionHeading
-        eyebrow="Aktuelles"
-        title="Neuigkeiten & Termine"
-        intro="Vorträge, Veröffentlichungen und Notizen aus Forschung und Lehre."
-      />
+export const News = () => {
+  const [showAllNews, setShowAllNews] = useState(false);
+  const visibleNews = showAllNews ? news : news.slice(0, INITIAL_NEWS_COUNT);
+  const hiddenNewsCount = news.length - INITIAL_NEWS_COUNT;
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {news.map((n) => (
-          <article
-            key={n.title}
-            className="group p-7 rounded-md border border-border bg-card hover:shadow-warm hover:-translate-y-1 transition-all duration-500"
-          >
-            <div className="flex items-center justify-between mb-5">
-              <time className="text-xs uppercase tracking-wider text-muted-foreground">{n.date}</time>
-              <span className="text-xs px-2.5 py-1 rounded-full bg-highlight/10 text-highlight font-medium">
-                {n.tag}
-              </span>
-            </div>
-            <h3 className="font-serif text-xl leading-snug mb-3 group-hover:text-highlight transition-colors">
-              {n.title}
-            </h3>
-            {n.image ? (
-              <img
-                src={n.image}
-                alt={n.imageAlt ?? "Beitragsbild"}
-                className="w-full h-auto rounded-md mb-4 border border-border/70"
-                loading="lazy"
-              />
-            ) : null}
-            <p className="text-sm text-muted-foreground leading-relaxed">{n.body}</p>
-          </article>
-        ))}
+  return (
+    <section id="news" className="py-24 lg:py-32 bg-background">
+      <div className="container">
+        <SectionHeading
+          eyebrow="Aktuelles"
+          title="Neuigkeiten & Termine"
+          intro="Vorträge, Veröffentlichungen und Notizen aus Forschung und Lehre."
+        />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {visibleNews.map((n) => (
+            <article
+              key={n.title}
+              className="group p-7 rounded-md border border-border bg-card hover:shadow-warm hover:-translate-y-1 transition-all duration-500"
+            >
+              <div className="flex items-center justify-between mb-5">
+                <time className="text-xs uppercase tracking-wider text-muted-foreground">{n.date}</time>
+                <span className="text-xs px-2.5 py-1 rounded-full bg-highlight/10 text-highlight font-medium">
+                  {n.tag}
+                </span>
+              </div>
+              <h3 className="font-serif text-xl leading-snug mb-3 group-hover:text-highlight transition-colors">
+                {n.title}
+              </h3>
+              {n.image ? (
+                <img
+                  src={n.image}
+                  alt={n.imageAlt ?? "Beitragsbild"}
+                  className="w-full h-auto rounded-md mb-4 border border-border/70"
+                  loading="lazy"
+                />
+              ) : null}
+              <p className="text-sm text-muted-foreground leading-relaxed">{n.body}</p>
+            </article>
+          ))}
+        </div>
+
+        {hiddenNewsCount > 0 ? (
+          <div className="mt-10 flex justify-center">
+            <Button
+              type="button"
+              variant="outline"
+              className="border-highlight/40 text-highlight hover:bg-highlight/10 hover:text-highlight"
+              aria-expanded={showAllNews}
+              onClick={() => setShowAllNews((current) => !current)}
+            >
+              {showAllNews ? "Ältere Neuigkeiten ausblenden" : `Ältere Neuigkeiten anzeigen (${hiddenNewsCount})`}
+            </Button>
+          </div>
+        ) : null}
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
