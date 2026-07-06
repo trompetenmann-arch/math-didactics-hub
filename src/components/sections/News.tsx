@@ -6,6 +6,20 @@ const INITIAL_NEWS_COUNT = 6;
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
   {
+    date: "06.07.2026",
+    tag: "Vortrag",
+    title: "MINT-Sommer: Satz von Borsuk-Ulam",
+    body: (
+      <>
+        Heute halte ich beim MINT-Sommer der Universität Bielefeld einen Vortrag zum Satz von Borsuk-Ulam —
+        mit anschaulichen Zugängen zu einem klassischen Resultat der Topologie und seinen überraschenden
+        Anwendungen.
+      </>
+    ),
+    image: "/borsuk_ulam_linkedin.png",
+    imageAlt: "Ankündigungsbild zum Vortrag über den Satz von Borsuk-Ulam beim MINT-Sommer der Universität Bielefeld",
+  },
+  {
     date: "05.07.2026",
     tag: "Workshop",
     title: "Zwei-Quadrate-Satz bei mathe+",
