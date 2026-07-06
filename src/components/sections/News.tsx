@@ -20,7 +20,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     imageAlt: "Ankündigungsbild zum Vortrag über den Satz von Borsuk-Ulam beim MINT-Sommer der Universität Bielefeld",
   },
   {
-    date: "05.07.2026",
+    date: "13.06.2026",
     tag: "Workshop",
     title: "Zwei-Quadrate-Satz bei mathe+",
     body: (
