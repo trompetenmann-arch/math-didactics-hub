@@ -16,11 +16,11 @@ const pubs = [
     venue: "mathematik lehren 255, 42–45",
   },
   {
-    year: "accepted",
+    year: "2026",
     type: "Artikel · peer reviewed",
     co: "Katter, V.; Huget, J.",
     title: "Förderung digitaler Kompetenzen durch LLMs — Darstellungswechsel quadratischer Funktionen mit ChatGPT",
-    venue: "mathematica didactica",
+    venue: "mathematica didactica 49 (2)",
   },
   {
     year: "2025",

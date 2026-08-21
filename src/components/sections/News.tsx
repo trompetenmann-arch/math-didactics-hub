@@ -6,6 +6,17 @@ const INITIAL_NEWS_COUNT = 6;
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
   {
+    date: "20.08.2026",
+    tag: "Publikation",
+    title: "Neuer Artikel zu digitalen Kompetenzen durch LLMs",
+    body: (
+      <>
+        Der neue Artikel „Förderung digitaler Kompetenzen durch LLMs — Darstellungswechsel quadratischer Funktionen
+        mit ChatGPT“ von Valentin Katter und Jan Huget ist in mathematica didactica 49 (2) erschienen.
+      </>
+    ),
+  },
+  {
     date: "06.07.2026",
     tag: "Vortrag",
     title: "MINT-Sommer: Satz von Borsuk-Ulam",
