@@ -12,7 +12,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     body: (
       <>
         Der neue Artikel „Förderung digitaler Kompetenzen durch LLMs — Darstellungswechsel quadratischer Funktionen
-        mit ChatGPT“ von Valentin Katter und Jan Huget ist in mathematica didactica 49 (2) erschienen.
+        mit ChatGPT“ von Valentin Katter und Judith Huget ist in mathematica didactica 49 (2) erschienen.
       </>
     ),
   },
