@@ -15,6 +15,8 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         mit ChatGPT“ von Valentin Katter und Judith Huget ist in mathematica didactica 49 (2) erschienen.
       </>
     ),
+        image: "/karussell_slide1.png",
+    imageAlt: "Ankündigungsbild neuer Artikel",
   },
   {
     date: "06.07.2026",
