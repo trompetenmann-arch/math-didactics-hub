@@ -6,6 +6,24 @@ const INITIAL_NEWS_COUNT = 6;
 
 const news: { date: string; tag: string; title: string; body: ReactNode; image?: string; imageAlt?: string }[] = [
   {
+    date: "Aug 2026",
+    tag: "Publikation",
+    title: "Neuer Artikel mit Nicolás Alarcón-Relmucao erschienen",
+    body: (
+      <>
+        Der Beitrag thematisiert das Potenzial von Vibe Coding als didaktischen Ansatz und Assessmentinstrument in
+        der mathematikdidaktischen Hochschullehre am Beispiel des Lehrprojekts KIVIMA.
+        <br />
+        <br />
+        Katter, V., &amp; Alarcón-Relmucao, N. (2026). Vibe Coding als Assessment fachdidaktischer und KI-bezogener
+        Kompetenzen: Erfahrungen aus dem Lehrprojekt KIVIMA. <em>Mitteilungen der Gesellschaft für Didaktik der
+        Mathematik, 121</em>, 5–8.
+      </>
+    ),
+    image: "/cover_issue_135_de_DE.png",
+    imageAlt: "Titelbild der Mitteilungen der Gesellschaft für Didaktik der Mathematik (MGDM), Heft 121, August 2026",
+  },
+  {
     date: "20.08.2026",
     tag: "Publikation",
     title: "Neuer Artikel zu digitalen Kompetenzen durch LLMs",
