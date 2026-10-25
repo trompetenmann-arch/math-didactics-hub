@@ -4,11 +4,12 @@ import { ArrowLeft } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/button";
+import { CONTACT_EMAIL } from "@/data/profiles";
 
 const Datenschutz = () => (
   <main className="min-h-screen bg-background">
     <SiteHeader />
-    <section className="py-16 lg:py-24">
+    <section className="pt-28 pb-16 lg:pt-32 lg:pb-24">
       <div className="container max-w-4xl space-y-8">
         <Button asChild size="lg" className="h-12 px-6 text-base font-semibold shadow-md">
           <Link to="/" aria-label="Zurück zur Startseite">
@@ -38,7 +39,7 @@ const Datenschutz = () => (
             </p>
             <ul>
               <li>
-                E-Mail: <a href="mailto:vkatter@math.uni-bielefeld.de">vkatter@math.uni-bielefeld.de</a>
+                E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
               </li>
             </ul>
 
@@ -59,7 +60,17 @@ const Datenschutz = () => (
               <li>Referrer-URL</li>
               <li>Hostname des zugreifenden Rechners</li>
             </ul>
-            <p>Die Verarbeitung dieser Daten erfolgt zur technischen Bereitstellung und Sicherheit der Website.</p>
+            <p>
+              Die Verarbeitung dieser Daten erfolgt zur technischen Bereitstellung und Sicherheit der Website.
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das berechtigte Interesse liegt in einer sicheren und
+              stabilen Bereitstellung der Website. Auf Inhalt und Dauer der Speicherung dieser Logdaten habe ich
+              keinen Einfluss.
+            </p>
+            <p>
+              Dabei können Daten in die USA übermittelt werden. GitHub ist nach dem EU-US Data Privacy Framework
+              zertifiziert; zusätzlich stützt sich GitHub auf EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c
+              DSGVO).
+            </p>
             <p>
               Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub:{" "}
               <a
@@ -71,13 +82,27 @@ const Datenschutz = () => (
               </a>
             </p>
 
-            <h2>3. SSL- bzw. TLS-Verschlüsselung</h2>
+            <h2>3. Keine Cookies, kein Tracking, lokale Schriftarten</h2>
+            <p>
+              Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Schriftarten und
+              alle sonstigen Inhalte werden direkt von diesem Server ausgeliefert; beim Aufruf werden keine Daten an
+              Dritte wie Google Fonts übertragen.
+            </p>
+
+            <h2>4. Externe Links</h2>
+            <p>
+              Die Website enthält Links zu externen Angeboten (z. B. Universität Bielefeld, Verlage, ResearchGate,
+              LinkedIn). Erst wenn Sie einem solchen Link folgen, werden Daten an den jeweiligen Anbieter übertragen;
+              dort gilt dessen Datenschutzerklärung.
+            </p>
+
+            <h2>5. SSL- bzw. TLS-Verschlüsselung</h2>
             <p>
               Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-
               bzw. TLS-Verschlüsselung.
             </p>
 
-            <h2>4. Ihre Rechte</h2>
+            <h2>6. Ihre Rechte</h2>
             <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
             <ul>
               <li>Auskunft über Ihre gespeicherten Daten</li>
@@ -89,13 +114,15 @@ const Datenschutz = () => (
             </ul>
             <p>Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.</p>
 
-            <h2>5. Kontaktaufnahme</h2>
+            <h2>7. Kontaktaufnahme</h2>
             <p>
               Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben zwecks Bearbeitung der Anfrage sowie für
-              mögliche Anschlussfragen gespeichert. Diese Daten werden nicht ohne Ihre Einwilligung weitergegeben.
+              mögliche Anschlussfragen gespeichert (Art. 6 Abs. 1 lit. b bzw. f DSGVO). Diese Daten werden nicht
+              ohne Ihre Einwilligung weitergegeben und gelöscht, sobald sie für die Bearbeitung nicht mehr
+              erforderlich sind.
             </p>
 
-            <h2>6. Änderungen</h2>
+            <h2>8. Änderungen</h2>
             <p>
               Diese Datenschutzerklärung kann angepasst werden, wenn sich technische oder rechtliche
               Rahmenbedingungen ändern.

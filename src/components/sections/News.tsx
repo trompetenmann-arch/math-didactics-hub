@@ -20,7 +20,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         Mathematik, 121</em>, 5–8.
       </>
     ),
-    image: "/cover_issue_135_de_DE.png",
+    image: "/cover_issue_135_de_DE.webp",
     imageAlt: "Titelbild der Mitteilungen der Gesellschaft für Didaktik der Mathematik (MGDM), Heft 121, August 2026",
   },
   {
@@ -33,8 +33,8 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         mit ChatGPT“ von Valentin Katter und Judith Huget ist in mathematica didactica 49 (2) erschienen.
       </>
     ),
-        image: "/karussell_slide1.png",
-    imageAlt: "Ankündigungsbild neuer Artikel",
+    image: "/karussell_slide1.webp",
+    imageAlt: "Ankündigungsbild zum Artikel „Förderung digitaler Kompetenzen durch LLMs“ in mathematica didactica",
   },
   {
     date: "06.07.2026",
@@ -47,7 +47,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         Anwendungen.
       </>
     ),
-    image: "/borsuk_ulam_linkedin.png",
+    image: "/borsuk_ulam_linkedin.webp",
     imageAlt: "Ankündigungsbild zum Vortrag über den Satz von Borsuk-Ulam beim MINT-Sommer der Universität Bielefeld",
   },
   {
@@ -62,7 +62,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         Punktegitter und stehen auf meiner Homepage zur Nutzung bereit.
       </>
     ),
-    image: "/1781351791173.jpg",
+    image: "/mathe-plus-zwei-quadrate.webp",
     imageAlt: "Workshopmaterial zum Zwei-Quadrate-Satz im Rahmen von mathe+",
   },
   {
@@ -70,7 +70,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     tag: "Vortrag",
     title: "Online-Vortrag bei KIMAD",
     body: "Vorstellung von Math CaTS im Rahmen der KIMAD-Sitzung: „Chatbots als Tutoren in der Schule“ mit Fokus auf Prozessqualität und Interaktionsgranularität beim mathematischen Modellieren mit ChatGPT Voice.",
-    image: "/KIMAD.png",
+    image: "/KIMAD.webp",
     imageAlt: "Bild zum Online-Vortrag bei KIMAD",
   },
   {
@@ -78,7 +78,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     tag: "Vortrag",
     title: "Mathematikdidaktisches Kolloquium in Siegen",
     body: "Vortrag zu Anwendungs- und Forschungsperspektiven von KI im Mathematikunterricht mit Einblicken in KIVIMA und Math-CaTs.",
-    image: "/linkedin_post_uni_siegen.jpg",
+    image: "/linkedin_post_uni_siegen.webp",
     imageAlt: "LinkedIn-Post zum Vortrag im Mathematikdidaktischen Kolloquium der Universität Siegen",
   },
   {
@@ -91,7 +91,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         gemeinsam herausgegeben mit Daniel Frohn.
       </>
     ),
-    image: "/mathematiklehren_255_linkedin.jpg",
+    image: "/mathematiklehren_255_linkedin.webp",
     imageAlt: "Titelbild des Themenhefts 'mit Flächeninhalten Mathe verstehen' in mathematik lehren",
   },
   {
@@ -101,13 +101,13 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     body: (
       <>
         Entwicklung und Erprobung KI-gestützter Unterrichtsmaterialien — neu im Lehrangebot der Universität
-        Bielefeld, gefördert vom Qualitätsfond für Lehre.{" "}
-        <a href="https://kivima.eu" target="_blank" rel="noreferrer" className="text-highlight hover:underline">
+        Bielefeld, gefördert vom Qualitätsfonds für Lehre.{" "}
+        <a href="https://kivima.eu" target="_blank" rel="noopener noreferrer" className="text-highlight hover:underline">
           kivima.eu
         </a>
       </>
     ),
-    image: "/kivima-logo.png",
+    image: "/kivima-logo.webp",
     imageAlt: "KIVIMA-Logo",
   },
   {
@@ -116,19 +116,19 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
     title: "Math CaTS gestartet",
     body: (
       <>
-        Vom Bielefelder Nachwuchsfond gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit
+        Vom Bielefelder Nachwuchsfonds gefördertes Projekt zum Einsatz von ChatGPT in der Sek. I — Kooperation mit
         Prof. Salle und Prof. Wolff.{" "}
         <a
           href="https://www.uni-bielefeld.de/fakultaeten/psychologie/abteilung/arbeitseinheiten/16/projekte/laufende/cats/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="text-highlight hover:underline"
         >
           Mehr zu Math CaTS
         </a>
       </>
     ),
-    image: "/math_cats-logo.jpg",
+    image: "/math_cats-logo.webp",
     imageAlt: "Math CaTS-Logo",
   },
   {
@@ -142,7 +142,7 @@ const news: { date: string; tag: string; title: string; body: ReactNode; image?:
         <a
           href="https://link.springer.com/article/10.1007/s13138-024-00244-6"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="text-highlight hover:underline"
         >
           Zum Artikel

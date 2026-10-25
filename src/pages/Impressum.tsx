@@ -4,11 +4,12 @@ import { ArrowLeft } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/button";
+import { CONTACT_EMAIL } from "@/data/profiles";
 
 const Impressum = () => (
   <main className="min-h-screen bg-background">
     <SiteHeader />
-    <section className="py-16 lg:py-24">
+    <section className="pt-28 pb-16 lg:pt-32 lg:pb-24">
       <div className="container max-w-4xl space-y-8">
         <Button asChild size="lg" className="h-12 px-6 text-base font-semibold shadow-md">
           <Link to="/" aria-label="Zurück zur Startseite">
@@ -41,7 +42,7 @@ const Impressum = () => (
 
             <ul>
               <li>
-                E-Mail: <a href="mailto:vkatter@math.uni-bielefeld.de">vkatter@math.uni-bielefeld.de</a>
+                E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
               </li>
               <li>Telefon: +49 521 106-5049</li>
             </ul>

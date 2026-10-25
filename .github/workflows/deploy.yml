@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  # Wöchentlich neu bauen, damit neue Einträge aus PUB/ORCID automatisch erscheinen (Mo., 05:17 UTC).
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -28,7 +32,18 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Fetch publications (PUB / ORCID)
+        run: npm run fetch:publications
+        continue-on-error: true
+        env:
+          PUB_PERSON_ID: ${{ vars.PUB_PERSON_ID || '78762114' }}
+          PUB_EXPORT_URL: ${{ vars.PUB_EXPORT_URL }}
+          ORCID_ID: ${{ vars.ORCID_ID }}
+
+      - name: Test
+        run: npm test
 
       - name: Build
         run: npm run build

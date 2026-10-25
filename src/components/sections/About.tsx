@@ -7,7 +7,7 @@ const academic = [
 ];
 
 const career = [
-  { y: "seit 04/2025", t: "Lehrkraft, Rudolf Steiner Schule Bielefeld" },
+  { y: "seit 04/2025", t: "Lehrkraft, Rudolf-Steiner-Schule Bielefeld" },
   { y: "seit 04/2023", t: "Postdoc, Institut für Didaktik der Mathematik, Universität Bielefeld" },
   { y: "04/2024 – 09/2024", t: "Vertretung W2-Professur, Universität Osnabrück" },
   { y: "06/2022 – 09/2023", t: "Gastdozent, Hochschule Fresenius Düsseldorf" },

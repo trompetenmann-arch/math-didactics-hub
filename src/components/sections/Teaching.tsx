@@ -36,6 +36,10 @@ const overview = [
 ];
 
 const workshops = [
+  { year: "2026", venue: "MINT-Sommer (Uni Bielefeld)", topic: "Der Satz von Borsuk-Ulam" },
+  { year: "2026", venue: "mathe+ (Uni Bielefeld)", topic: "Die Kunst, Zahlen in Quadrate zu zerlegen — Workshop zum Zwei-Quadrate-Satz (Kl. 9/10)" },
+  { year: "2026", venue: "KIMAD (online)", topic: "Math CaTS — Chatbots als Tutoren in der Schule" },
+  { year: "2026", venue: "Mathematikdidaktisches Kolloquium, Universität Siegen", topic: "Anwendungs- und Forschungsperspektiven von KI im Mathematikunterricht" },
   { year: "2025", venue: "BI.Mathe Lehrerfortbildungstag", topic: "KI im Mathematikunterricht" },
   { year: "2025", venue: "BI.Mathe Lehrerfortbildungstag", topic: "Spielerisch Gespräche anregen" },
   { year: "2025", venue: "Netzwerktagung Mathematik 2025 (NLQ)", topic: "KI aus Schülerperspektive" },
@@ -54,7 +58,7 @@ export const Teaching = () => (
 
       <div className="grid lg:grid-cols-3 gap-10 mb-20">
         <div className="lg:col-span-2">
-          <h3 className="font-serif text-2xl mb-5">Aktuelle Lehre — SoSe 2026</h3>
+          <h3 className="font-serif text-2xl mb-5">Lehrveranstaltungen im SoSe 2026</h3>
           <div className="rounded-md border border-border/70 bg-card overflow-hidden shadow-soft">
             {current.map((c) => (
               <a
@@ -104,7 +108,7 @@ export const Teaching = () => (
 
       <h3 className="font-serif text-2xl mb-5">Übersicht gehaltener Lehrveranstaltungen</h3>
       <div className="rounded-md border border-border/70 bg-card overflow-hidden shadow-soft mb-20">
-        <div className="grid grid-cols-12 px-6 py-3 border-b border-border bg-secondary/40 text-xs uppercase tracking-wider text-muted-foreground">
+        <div className="hidden md:grid grid-cols-12 px-6 py-3 border-b border-border bg-secondary/40 text-xs uppercase tracking-wider text-muted-foreground">
           <div className="col-span-6">Veranstaltung</div>
           <div className="col-span-2">Schulform</div>
           <div className="col-span-1 text-right">Anzahl</div>
@@ -113,17 +117,22 @@ export const Teaching = () => (
         {overview.map((c) => (
           <div
             key={c.title + c.inst}
-            className="grid grid-cols-12 px-6 py-4 border-b border-border/50 last:border-0 items-center hover:bg-secondary/30 transition-colors"
+            className="grid grid-cols-12 gap-y-1 px-6 py-4 border-b border-border/50 last:border-0 items-center hover:bg-secondary/30 transition-colors"
           >
-            <div className="col-span-6 text-sm font-medium leading-snug">{c.title}</div>
-            <div className="col-span-2 text-xs text-muted-foreground">{c.level}</div>
-            <div className="col-span-1 text-right text-xs tabular-nums text-highlight font-medium">{c.count}</div>
-            <div className="col-span-3 text-right text-xs text-muted-foreground">{c.inst}</div>
+            <div className="col-span-10 md:col-span-6 text-sm font-medium leading-snug">{c.title}</div>
+            <div className="col-span-2 md:col-span-1 md:order-3 text-right text-xs tabular-nums text-highlight font-medium">
+              {c.count}
+            </div>
+            <div className="col-span-12 md:col-span-2 md:order-2 text-xs text-muted-foreground">
+              {c.level}
+              <span className="md:hidden"> · {c.inst}</span>
+            </div>
+            <div className="hidden md:block md:col-span-3 md:order-4 text-right text-xs text-muted-foreground">{c.inst}</div>
           </div>
         ))}
       </div>
 
-      <h3 className="font-serif text-2xl mb-5">Workshops & Vorträge</h3>
+      <h3 className="font-serif text-2xl mb-5">Workshops & Vorträge (Auswahl)</h3>
       <div className="rounded-md border border-border/70 bg-card overflow-hidden shadow-soft">
         {workshops.map((w, i) => (
           <div
