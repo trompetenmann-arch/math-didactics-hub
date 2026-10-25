@@ -1,15 +1,12 @@
-import portrait from "@/assets/portrait.png";
+import portrait from "@/assets/portrait.webp";
 import type { MouseEvent } from "react";
+import { profiles } from "@/data/profiles";
+import { scrollToSection as scrollToId } from "@/lib/scroll";
 
 export const Hero = () => {
   const scrollToSection = (event: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     event.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (!section) return;
-
-    const headerOffset = 72;
-    const top = section.getBoundingClientRect().top + window.scrollY - headerOffset;
-    window.scrollTo({ top, behavior: "smooth" });
+    scrollToId(sectionId);
   };
 
   return (
@@ -41,65 +38,69 @@ export const Hero = () => {
         <div className="lg:col-span-7 animate-fade-up">
           <div className="inline-flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <span className="h-px w-8 bg-accent" />
-            Mathematikdidaktik · Forschung & Lehre
+            Mathematikdidaktik · Universität Bielefeld
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-balance mb-6">
-            Mathematik lernen —{" "}
-            <span className="italic text-highlight">mit und ohne KI</span>
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-balance mb-4">
+            Dr. Valentin Katter
           </h1>
+          <p className="font-serif text-2xl md:text-3xl italic text-highlight mb-8 text-balance">
+            Mathematik lernen — mit und ohne KI
+          </p>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed text-balance">
-            Ich bin Postdoc am Institut für Didaktik der Mathematik (IDM) der{" "}
-            <em className="text-foreground not-italic font-medium">Universität Bielefeld</em>{" "}
-            und Lehrer an der Rudolf-Steiner Schule. Ich forsche zu Grundvorstellungen
-            mathematischer Begriffe und zum Einsatz von Künstlicher Intelligenz im Mathematikunterricht.
+            Postdoc am Institut für Didaktik der Mathematik (IDM) der{" "}
+            <span className="text-foreground font-medium">Universität Bielefeld</span> und Lehrer an der
+            Rudolf-Steiner-Schule Bielefeld. Ich forsche zu Grundvorstellungen mathematischer Begriffe und zum
+            Einsatz Künstlicher Intelligenz im Mathematikunterricht.
           </p>
+
+          <ul className="flex flex-wrap gap-2 mt-6" aria-label="Forschungsschwerpunkte">
+            {["Grundvorstellungen", "KI & Large Language Models", "Trigonometrie & Analysis", "Stoffdidaktik"].map((t) => (
+              <li key={t} className="text-xs px-3 py-1 rounded-full border border-border bg-card/60 text-foreground/80">
+                {t}
+              </li>
+            ))}
+          </ul>
 
           <div className="flex flex-wrap gap-3 mt-10">
             <a
-              href="#projects"
-              onClick={(event) => scrollToSection(event, "projects")}
+              href="#research"
+              onClick={(event) => scrollToSection(event, "research")}
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:shadow-warm transition-all"
             >
               Forschung entdecken
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
+              href="#publications"
+              onClick={(event) => scrollToSection(event, "publications")}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-sm font-medium hover:bg-secondary transition-all"
+            >
+              Publikationen
+            </a>
+            <a
               href="#contact"
               onClick={(event) => scrollToSection(event, "contact")}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-sm font-medium hover:bg-secondary transition-all"
             >
-              Kontakt aufnehmen
+              Kontakt
             </a>
           </div>
 
-          <div className="flex flex-wrap items-center gap-5 mt-10">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-10">
             <span className="text-xs uppercase tracking-wider text-muted-foreground">Profile:</span>
-            <a
-              href="https://www.researchgate.net/profile/Valentin-Katter"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
-            >
-              ResearchGate
-            </a>
-            <a
-              href="https://www.linkedin.com/in/valentin-katter-74b142402/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=78762114"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
-            >
-              eKVV Bielefeld
-            </a>
+            {profiles.map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm border-b border-border hover:border-accent hover:text-foreground text-muted-foreground transition-colors pb-0.5"
+              >
+                {p.label}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -110,6 +111,9 @@ export const Hero = () => {
               <img
                 src={portrait}
                 alt="Porträt von Dr. Valentin Katter, Mathematikdidaktiker"
+                width={612}
+                height={709}
+                fetchPriority="high"
                 className="w-full h-full object-cover"
               />
             </div>

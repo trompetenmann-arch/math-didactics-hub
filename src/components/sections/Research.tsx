@@ -8,12 +8,12 @@ const areas = [
   },
   {
     title: "Stoffdidaktische Forschung",
-    body: "Didaktisch orientierte Sachanalysen zur theoriegeleiteten Herleitung von Grundvorstellungen, empirisch validiert durch qualitative Fallstudien. ",
+    body: "Didaktisch orientierte Sachanalysen zur theoriegeleiteten Herleitung von Grundvorstellungen, empirisch validiert durch qualitative Fallstudien.",
     tags: ["Sachanalyse", "Qualitative Inhaltsanalyse"],
   },
   {
     title: "Grundvorstellungen zur Trigonometrie",
-    body: "Wie bauen Lernende tragfähige Vorstellungen zum Sinus auf  zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
+    body: "Wie bauen Lernende tragfähige Vorstellungen zum Sinus auf – zwischen Dreieck, Einheitskreis und periodischer Funktion? Die Oszillationsvorstellung als Grundvorstellung für die reelle Sinusfunktion.",
     tags: ["Sinusfunktion", "Vorstellungswechsel", "Sek. II"],
   },
   {
@@ -29,7 +29,7 @@ export const Research = () => (
       <SectionHeading
         eyebrow="Forschung"
         title={<>Forschungs­schwerpunkte</>}
-        
+        intro="Stoffdidaktische Grundlagenforschung und empirische Studien zum Lernen mit digitalen Medien und KI."
       />
 
       <div className="grid md:grid-cols-2 gap-6">

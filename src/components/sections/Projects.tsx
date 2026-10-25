@@ -4,7 +4,7 @@ const current = [
   {
     title: "KIVIMA — KI-gestützte Visualisierungen im Mathematikunterricht",
     period: "ab 2026",
-    funder: "Qualitätsfond für Lehre#\n\n",
+    funder: "Qualitätsfonds für Lehre",
     body: "Praxisorientierte Lerngelegenheiten im Lehramtsstudium Mathematik: KI-gestützte Entwicklung und Erprobung dynamischer Visualisierungen.",
     link: "https://kivima.eu",
     linkLabel: "kivima.eu",
@@ -12,7 +12,7 @@ const current = [
   {
     title: "Math CaTS — Chatbots als Tutor in Schulen",
     period: "seit 2025",
-    funder: "Bielefelder Nachwuchsfond",
+    funder: "Bielefelder Nachwuchsfonds",
     body: "Untersuchung, wie ChatGPT die mathematische Leistung von Lernenden der Sekundarstufe I beeinflusst — in Kooperation mit Prof. Dr. Alexander Salle (Mathematikdidaktik) und Prof. Dr. Fabian Wolff (Psychologie).",
     link: "https://www.uni-bielefeld.de/fakultaeten/psychologie/abteilung/arbeitseinheiten/16/projekte/laufende/cats/",
     linkLabel: "Zu Math CaTS",
@@ -20,7 +20,7 @@ const current = [
   {
     title: "DiLeMath — Digitale Lernplattformen im Mathematikunterricht",
     period: "seit 2024",
-    funder: "Qualitätsfond für Lehre ",
+    funder: "Qualitätsfonds für Lehre",
     body: "Studierende sammeln Erfahrungen mit digitalen Plattformen und KI-Tools (fobizz, bettermarks, studyly, mathegym, Anton u. v. m.) und entwickeln Kriterien für eine kritische Bewertung.",
   },
 ];
@@ -60,7 +60,7 @@ const Item = ({ p }: { p: typeof current[number] }) => (
         <a
           href={p.link}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="mt-4 inline-flex items-center rounded-full bg-highlight text-highlight-foreground px-3 py-1.5 text-xs font-semibold hover:opacity-90 transition-opacity"
         >
           {p.linkLabel ?? "Projektseite"}
@@ -85,8 +85,8 @@ export const Projects = () => (
     <div className="container">
       <SectionHeading
         eyebrow="Projekte & Drittmittel"
-        title="Aktuelle Forschungs­projekte"
-        intro="Lehr- und Forschungsprojekte"
+        title="Aktuelle Projekte"
+        intro="Drittmittel- und Lehrprojekte, national und international."
       />
 
       <div className="space-y-px rounded-md overflow-hidden border border-border/70 bg-card shadow-soft">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/SectionHeading";
+import { CONTACT_EMAIL, profiles } from "@/data/profiles";
 
 export const Contact = () => (
   <section id="contact" className="py-24 lg:py-32 bg-warm grain relative overflow-hidden">
@@ -16,7 +17,7 @@ export const Contact = () => (
     <div className="container relative grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-5">
         <SectionHeading
-          eyebrow="KONTAKT"
+          eyebrow="Kontakt"
           title={<>Im Gespräch <em className="italic text-highlight">bleiben</em>.</>}
           intro={<>Für Kooperationen, Anfragen zu Vorträgen, Betreuungsanfragen oder fachlichen Austausch.<br /><br />Ich freue mich, von Ihnen zu hören.</>}
         />
@@ -27,8 +28,8 @@ export const Contact = () => (
           {[
             {
               label: "E-MAIL",
-              value: "vkatter@uni-bielefeld.de",
-              href: "mailto:vkatter@uni-bielefeld.de",
+              value: CONTACT_EMAIL,
+              href: `mailto:${CONTACT_EMAIL}`,
             },
             {
               label: "INSTITUT",
@@ -38,21 +39,7 @@ export const Contact = () => (
               label: "SCHULE",
               value: "Rudolf-Steiner-Schule Bielefeld",
             },
-            {
-              label: "EKVV BIELEFELD",
-              value: "Profil ansehen →",
-              href: "https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=78762114",
-            },
-            {
-              label: "RESEARCHGATE",
-              value: "Valentin Katter →",
-              href: "https://www.researchgate.net/profile/Valentin-Katter",
-            },
-            {
-              label: "LINKEDIN",
-              value: "Profil ansehen →",
-              href: "https://www.linkedin.com/in/valentin-katter-74b142402/",
-            },
+            ...profiles.map((p) => ({ label: p.label.toUpperCase(), value: "Profil ansehen →", href: p.href })),
           ].map((c) => {
             const Inner = (
               <>
